@@ -1,12 +1,12 @@
-provider "aws" {
-  region = local.region
-}
-
 # provider "aws" {
-#   alias                   = "local"
-#   region                  = local.region
-#   shared_credentials_file = "/home/technat/.config/aws/credentials"
+#   region = local.region
 # }
+
+provider "aws" {
+  region                  = local.region
+  shared_credentials_file = "/home/technat/.aws/credentials"
+  profile = "alleaffengaffen"
+}
 
 provider "ct" {}
 
