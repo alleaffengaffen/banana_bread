@@ -5,7 +5,7 @@
 provider "aws" {
   region                  = local.region
   shared_credentials_file = "/home/technat/.aws/credentials"
-  profile = "alleaffengaffen"
+  profile                 = "alleaffengaffen"
 }
 
 provider "ct" {}
